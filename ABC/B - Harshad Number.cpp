@@ -9,7 +9,7 @@ int main() {
   int sum = 0;
   
   while (N>0) {
-    sum += N%10;
+    sum += N%10;  //一の位からどんどん足していく
     N /=10;
   }
   
