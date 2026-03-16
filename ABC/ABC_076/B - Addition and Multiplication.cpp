@@ -7,7 +7,7 @@ int main() {
   int Initial_value = 1;
   
  for (int i=0; i<N; i++) {
-   if (Initial_value*2 < Initial_value+K) {
+   if (Initial_value*2 < Initial_value+K) {  //if文の条件はInitial_value < Kの方がシンプルである   
      Initial_value *= 2;
    }
    else {
