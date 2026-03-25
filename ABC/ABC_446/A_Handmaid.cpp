@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <cctype>
+#include <cctype> //std::tolowerを使うために必要
 using namespace std;
 
 int main() {
