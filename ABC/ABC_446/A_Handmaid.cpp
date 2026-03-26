@@ -7,7 +7,7 @@ int main() {
     string S;
     cin >> S;
 
-    S.at(0) = std::tolower(S.at(0));
+    S.at(0) = std::tolower(S.at(0)); //std::は名前衝突しないようにするためにつけている
     cout << "Of" << S << endl;
 
     return 0;
