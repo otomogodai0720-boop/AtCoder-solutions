@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector>
+#include <queue> //queueを使用する場合は#include <vector>は書かなくて良い
 using namespace std;
 #define rep(i,n) for (int i=0; i<(n); i++)
 
