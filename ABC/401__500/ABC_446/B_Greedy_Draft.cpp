@@ -15,7 +15,7 @@ int main() {
         rep(j,l) cin >> x[j];
         int k = 0;
         rep(j,l) {
-            if (!juice[x[j]]) { //juice[x[j]]がfalseだった場合、!によって条件式がtrueとなるのでif文が実行される。逆にtrueだった場合、!によって条件式がfalseになり、実行されない
+            if (!juice[x[j]]) { //juice[x[j]]がfalseだった場合、!によって条件式がtrueとなるのでif文の中身がが実行される。逆にtrueだった場合、!によって条件式がfalseになり、実行されない
                 k = x[j];
                 break;
             }
