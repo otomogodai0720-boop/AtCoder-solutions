@@ -16,13 +16,18 @@ int main() {
     }
 
     rep(i,n) {
-        if ((int)s[i].size() < mx) {
-            int dot = (mx - s[i].size())/2;
-            rep(j,dot) s[i] = '.' + s[i];
-            rep(j,dot) s[i] = s[i] + '.';
+            int k = (mx - s[i].size())/2;
+            rep(j,k) s[i] = '.' + s[i];
+            rep(j,k) s[i] = s[i] + '.';
             cout << s[i] << endl;
-        }
-        else cout << s[i] << endl;
     }
+    //rep(i,n) {
+       //int k = (mx - s[i].size())/2;
+       // string t;
+       // t += string(k,'.'); //if文をk回回して.をつけなくてもこのようにするとk個の.がつく
+       // t += s[i];
+       // t += string(k,'.');
+       // cout << t << endl;
+    //}
     return 0;
 }
