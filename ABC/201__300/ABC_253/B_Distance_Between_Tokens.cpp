@@ -65,7 +65,7 @@ int main() {
 //         }
 //     }
 //     int ans = 0;
-//     ans += abs(x[0]-x[1]);
+//     ans += abs(x[0]-x[1]); //abs()は引数の絶対値を返す
 //     ans += abs(y[0]-y[1]);
 //     cout << ans << endl;
 //     return 0;
