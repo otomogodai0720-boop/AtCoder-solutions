@@ -49,3 +49,24 @@ int main() {
     return 0;
 
 }
+
+//別解
+// int main() {
+//     int h, w;
+//     cin >> h >> w;
+//     vector<string> s(h);
+//     rep(i,h) cin >> s[i];
+// 
+//     vector<int> x, y;
+//     rep(i,h)rep(j,w) {
+//         if (s[i][j] == 'o') {
+//             x.push_back(i); //push.back()をうまく使えるようになろう
+//             y.push_back(j);
+//         }
+//     }
+//     int ans = 0;
+//     ans += abs(x[0]-x[1]);
+//     ans += abs(y[0]-y[1]);
+//     cout << ans << endl;
+//     return 0;
+// }
