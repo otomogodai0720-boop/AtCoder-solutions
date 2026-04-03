@@ -14,7 +14,7 @@ int main() {
         i++; k++;
     }
     if (k != 0) {
-        swap(x[0], x[k]); //swap(a,b)によってaとbが入れ替わる
+        swap(x[0], x[k]); //swap(a,b)によってaとbが入れ替わる（O - 1.14.STLの関数より）
     }
     cout << x << endl;
     return 0;
