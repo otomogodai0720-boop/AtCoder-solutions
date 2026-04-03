@@ -14,8 +14,7 @@ int main() {
         i++; k++;
     }
     if (k != 0) {
-        x[0] = x[k];
-        x[k] = '0';
+        swap(x[0], x[k]); //swap(a,b)によってaとbが入れ替わる
     }
     cout << x << endl;
     return 0;
