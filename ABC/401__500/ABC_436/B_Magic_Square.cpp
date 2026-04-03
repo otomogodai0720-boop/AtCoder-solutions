@@ -11,13 +11,13 @@ int main() {
     int r = 0; int c = (n-1)/2; int k = 1;
 
     rep(i,n*n-1) {
-        if (table[((r-1)%n+n)%n][((c+1)%n+n)%n] == 0) {
-            table[((r-1)%n+n)%n][((c+1)%n+n)%n] = k+1;
-            r = ((r-1)%n+n)%n;
-            c = ((c+1)%n+n)%n;
+        if (table[(r-1+n)%n][(c+1+n)%n] == 0) {
+            table[(r-1+n)%n][(c+1+n)%n] = k+1;
+            r = (r-1+n)%n;
+            c = (c+1+n)%n;
             k++;
         }
-        else if (table[((r-1)%n+n)%n][((c+1)%n+n)%n] != 0) {
+        else if (table[(r-1+n)%n][(c+1+n)%n] != 0) {
             table[(r+1)%n][c] = k+1;
             r = (r+1)%n;
             k++;
