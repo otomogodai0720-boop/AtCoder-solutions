@@ -26,12 +26,6 @@ int main() {
     return 0;
 }
 
-
-
-
-
-
-
 // 自分が最初に書いたコード（間違い）
 // int main() {
 //     int n;
