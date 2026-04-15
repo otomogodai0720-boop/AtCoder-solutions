@@ -18,18 +18,18 @@ int main() {
         int x, v;
         cin >> c >> x >> v;
         x--;
-        int pre = min(a[x], b[x]);
+        int pre = min(a[x], b[x]); //変更される前の小さい方の値をpreに入れておく
         if (c == 'A') a[x] = v;
         else b[x] = v;
-        int now = min(a[x], b[x]);
-        ans += now-pre; 
+        int now = min(a[x], b[x]); //変更された後に小さい方をnowに入れておく
+        ans += now-pre; //一回のクエリで変わるのはxの要素のみで、それ以外の要素はクエリ前のものと変わらない。したがって、一個前の和に変更した要素の差分を足せばいいだけなのでans += now-preとして出力すれば良い
         cout << ans << endl;
     }
     return 0;
 }
 
 
-// 最初に自分で書いたコード（間違っている）
+// 最初に自分で書いたコード（WAもでるし、TLEにもなる）
 // int main() {
 //     int n, q;
 //     cin >> n >> q;
