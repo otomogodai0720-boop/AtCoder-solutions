@@ -33,7 +33,7 @@ int main() {
 // int main() {
 //     int n, m;
 //     cin >> n >> m;
-//     vector<vector<bool>> table(n, vector<bool> (n));
+//     vector<vector<bool>> table(n, vector<bool> (n)); //これだと計算量がO(N^2)となってしまうのでダメ
 //     int ans = 0;
 // 
 //     rep(i,m) {
